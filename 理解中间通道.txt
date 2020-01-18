@@ -1,0 +1,24 @@
+$ go run main.go
+(b *barrier) Sync()
+0
+1
+2
+b.chCount <- struct{}{}
+3
+b.chCount <- struct{}{}
+b.chCount <- struct{}{}
+4
+b.chCount <- struct{}{}
+5
+6
+b.chCount <- struct{}{}
+7
+8
+b.chCount <- struct{}{}
+9
+b.chCount <- struct{}{}
+b.chCount <- struct{}{}
+b.chCount <- struct{}{}
+b.chCount <- struct{}{}
+close %v 0xc00004a0c0
+
